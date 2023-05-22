@@ -1,6 +1,13 @@
 import "./App.css";
 // package
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  Link,
+  NavLink,
+} from "react-router-dom";
 
 // pages
 import Home from "./pages/Home";
@@ -14,6 +21,9 @@ function App() {
       <div className="App">
         <nav>
           <h1>My Articles</h1>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />

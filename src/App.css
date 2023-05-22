@@ -21,4 +21,11 @@ nav h1 {
 nav a {
   color: #333;
   padding: 4px 10px;
+  text-decoration: none;
+}
+.active {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 8px;
 }
