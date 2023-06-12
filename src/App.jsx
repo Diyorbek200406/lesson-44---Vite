@@ -19,6 +19,7 @@ import RootLayout from "./layout/RootLayout";
 import ContactLayout from "./layout/ContactLayout";
 import ArticlesLayout from "./layout/ArticlesLayout";
 import Articles from "./pages/articles/Articles";
+import ArticlesDetails from "./pages/articles/ArticlesDetails";
 
 function App() {
   const routes = createBrowserRouter(
@@ -36,6 +37,7 @@ function App() {
 
         <Route path="articles" element={<ArticlesLayout />}>
           <Route index element={<Articles />} />
+          <Route path=":id" element={<ArticlesDetails />} />
         </Route>
       </Route>
     )
