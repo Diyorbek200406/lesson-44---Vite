@@ -33,4 +33,6 @@ function Articles() {
   );
 }
 
+// articles page 1 chi
+
 export default Articles;
